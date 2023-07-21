@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box-1{
+        font-size: 20px;
+    }
+    /* 1em is 16px Normally, but also a multiplier of its parent */
+    /* Nested em's get multiplied too */
+    .box-1 p{
+        font-size: 1.5em; 
+        padding: 1em;
+    }
+    /* 1rem is also 16 px because default unit is 16px for root*/
+    .box-2 h3{
+        font-size: 2rem;
+    }
+    .box-2 p{
+        font-size: 2rem;
+        line-height: 1.7rem;
+    }
+    /* changing root element font size to 10px */
+    html{
+        font-size: 10px;
+    }
+</style>
+<body>
+    <div class="box-1">
+        <h3>Box 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quisquam et quae nihil. Illum distinctio incidunt accusamus libero eveniet. Libero!</p>
+    </div>
+    <div class="box-2">
+        <h3>Box 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quisquam et quae nihil. Illum distinctio incidunt accusamus libero eveniet. Libero!</p>
+    </div>
+</body>
+</html>

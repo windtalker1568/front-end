@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe-2</title>
+</head>
+<style>
+    body{
+        background: #333;
+    }
+    .box{
+        background: white;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: 0;
+        left: 0;
+        animation: animate 1 6s forwards ease-in-out;
+    }
+    @keyframes animate1{
+        25%{
+            top: 0;
+            left: 300px;
+            background: red;
+        }
+        50%{
+            top: 300px;
+            left: 300px;
+            background: green;
+        }
+        75%{
+            top: 300px;
+            left: 0;
+            background: blue;
+        }
+        100%{
+            top: 0;
+            left: 0;
+            background: white;
+        }
+    }
+</style>   
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <li id="one">Hello</li>
+      <li id="two">Hello</li>
+    </div>
+  </body>
+  <script>
+    document.addEventListener("click", clickEvent);
+    function clickEvent(){
+    document.getElementById("one").style.color = "green";
+    document.getElementById("two").style.color = "yellow";
+    }
+    document.addEventListener("mouseover", mouseEvent);
+    function mouseEvent(){
+    document.getElementById("one").style.color = "blue";
+    document.getElementById("two").style.color = "red";
+    }
+    document.addEventListener("mouseout", mouseoutEvent);
+    function mouseoutEvent(){
+    document.getElementById("one").style.color = "purple";
+    document.getElementById("two").style.color = "white";
+    }
+  </script>
+</html>

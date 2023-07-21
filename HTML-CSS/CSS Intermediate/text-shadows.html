@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Shadow</title>
+</head>
+<style>
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3rem;
+    }
+    h1.A{
+        /* h-shadow | v-shadow | color */
+        text-shadow: 0.2rem 0.2rem steelblue;
+    }
+    h1.B{
+        /* h-shadow | v-shadow | blur | color */
+        text-shadow: 0.2rem 0.2rem 0.7 steelblue;
+    }
+    h1.C{
+        /* white text */
+        color: #fff;
+        text-shadow: 0.2 0.2 1rem steelblue;
+    }
+    h1.D{
+        /* h-shadow | v-shadow | blur | color */
+        text-shadow: -0.2rem -0.2rem 0.7 steelblue;        
+    }
+</style>
+<body>
+    <h1 class="A">welcome 14</h1>
+    <h1 class="B">welcome 24</h1>
+    <h1 class="C">welcome 34</h1>
+    <h1 class="D">welcome 44</h1>
+</body>
+</html>

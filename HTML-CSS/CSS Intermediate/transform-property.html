@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Properrties</title>
+</head>
+<style>
+body{
+        background: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .box{
+        background: white;
+        width: 300px;
+        height: 300px;
+        /* transform: rotate(25deg); */
+        /* transform: skew(25deg); */
+        /* transform: scale(0.5); */
+        transform: all 1s ease-in-out;
+    }
+    .box:hover{
+        /* transform: skew(180deg); */
+        /* transform: translateY(100px);
+        transform: translateX(100px); */
+        /* transform: translate(100px, 100x); */
+        transform: translate3d(100px, 100x 100px);
+    }
+</style>
+<body>
+    <div class="box"></div>
+</body>
+</html>
